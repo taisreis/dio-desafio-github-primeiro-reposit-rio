@@ -1,0 +1,127 @@
+Comandos GIT
+
+cmd - windows / linux subsystem for windows
+
+- git init
+- git add
+- git commit
+
+Mostra arquivos ocultos
+ls -a 
+
+listas
+dir | ls
+
+ 
+
+change directory
+cd / | cd /
+cd Windows | cd etc
+cd .. | cd ..
+
+Clear screen
+cls | clear (ctrl + l
+
+Make directory
+mkdir workspace | mkdir workspace
+
+Imprimir na tela
+echo hello | e
+
+Criar arquivo
+echo hello > hello.txt | echo hello > hello.txt
+
+
+Deletar
+No windows deleta o conteúdo, mas não deleta a pasta
+del workspace | 
+Remove toda a pasta e conteúdo 
+rmdir workspace /S /Q | rm -rf wordspace
+
+
+
+
+gerar a chave
+ssh-keygen -t ed25519 -C "xxxxx@gmail.com"
+
+colcoa no git hug
+
+depois habilita a chave
+eval $(ssh-agent -s)
+
+
+- como copiar um ambiente
+git clone <e passa o caminho ssh>
+
+
+iniciar git 
+ git init
+Initialized empty Git repository in C:/workspace/livro-receitas/.git/
+
+git config --global user.email "XXXXXXX@gmail.com"
+ git config --global user.name Flops
+
+ver o que está configurado, nome e email
+ git config --list
+
+
+reescrever as configurações
+
+git config --global --unset user.email
+git config --global --unset user.name
+
+dar permissão novamente
+git config --global set.mail "XXXXXXX@gmail.com"
+
+
+
+Mostrar arquivos ocultos
+ls -agent
+
+Status
+git status
+
+mover
+mc strogonogg.md ./receitas/
+
+
+criar arquivo
+echo > nomearquivo.extensão
+
+adicionar ao stage
+
+git add * - o asterisco adiciona tudo
+
+
+Commit - envia para o stagins area - working diretorory > to > area stage
+git commit -m "comentário"
+
+
+
+Markdown
+# Titulo Nivel 1
+## Titulo Nivel 2
+### Titulo Nivel 3
+#### Titulo Nivel 4
+##### Titulo Nivel 5
+###### Titulo Nivel 6
+
+
+subir
+- sempre adicionar as coisas modificadas no unstage
+git add *
+- coloca commit
+git commit -m "mensagem" 
+- sobe para o github
+git push -u origin main
+ 
+ 
+para puxar as informações
+git pull origin main
+
+
+copiando projetos
+git clone https://github.com/ferhpa/flow-crafter.git
+ 
+olhar o diretorio do github
+git remote -v
